@@ -1,0 +1,142 @@
+body {
+  padding-top: 20px;
+  &:before {
+    z-index: 10001;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: limegreen;
+    content: "Xsmall";
+  }
+  @include media-breakpoint-up(sm) {
+    &:before {
+      content: "small";
+      background: #f00;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+    &:before {
+      content: "middle";
+      background: green;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &:before {
+      content: "Large";
+      background: turquoise;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &:before {
+      content: "XLarge";
+      background: #f09;
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    &:before {
+      content: "XXLarge";
+      background: #90f;
+    }
+  }
+}
+
+.features {
+  background: yellowgreen;
+  .item {
+    background: #ccc;
+  }
+}
+// .carousel-control-next-icon {
+//     background: #f00;
+// }
+.offcanvas-top {
+  height: 100vh;
+}
+.offcanvas-title {
+  color: #90f;
+  font-weight: bold;
+}
+.navbar-toggler {
+  border: 2px solid;
+}
+.navbar-dark .navbar-toggler {
+  border-color: yellow;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.intro-box {
+  background: teal;
+}
+.gallery-row {
+  margin-bottom: 20px;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro .text {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 85px);
+  left: calc(50% - 570px);
+}
+.intro .text h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  font-family: "Quattrocento Sans", sans-serif;
+  text-transform: uppercase;
+}
+.intro .text p {
+  width: 650px;
+  color: #ccd0d7;
+}
+.btn-outline-primary {
+  color: #ffe5e5;
+  background: #39a493;
+  border-color: #39a493;
+}
+.btn-outline-secondary {
+  color: #ffe5e5;
+  border-color: #ffe5e5;
+}
+
+.intro-box {
+  background: none;
+  width: 650px;
+  padding-left: 0em;
+}
+
+.intro-box h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  color: #292f36;
+  font-family: "Quattrocento Sans", sans-serif;
+  padding-top: 85px;
+  padding-bottom: 65px;
+}
+.intro-box p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8d8f92;
+  font-family: "Open Sans", sans-serif;
+}
+.row-features {
+  float: right;
+  flex-direction: column;
+  width: 450px;
+  padding-top: 200px;
+  padding-right: 0px;
+  padding-left: 30px;
+}

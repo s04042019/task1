@@ -1,0 +1,6 @@
+@mixin texth1($fw, $fs, $color) {
+  font-weight: $fw;
+  font-size: $fs;
+  color: $color;
+  font-family: "Quattrocento Sans", sans-serif;
+}
